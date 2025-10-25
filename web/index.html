@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bitcoin & EEG Dashboard</title>
+
+  <!-- External Libraries -->
+  <script src="https://s3.tradingview.com/tv.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Local Files -->
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>Bitcoin Trading & Muse EEG Dashboard</header>
+  
+  <div class="main-container">
+    <!-- Bitcoin Chart -->
+    <div class="left-panel">
+      <div class="panel-title">Bitcoin Chart (BTC/USD)</div>
+      <div id="tradingview-widget"></div>
+    </div>
+
+    <!-- EEG Chart -->
+    <div class="right-panel">
+      <div class="panel-title">Muse EEG Signal Graph</div>
+      <canvas id="eeg-canvas"></canvas>
+    </div>
+
+    <!-- Color Sphere -->
+    <div class="color-sphere-section">
+      <h3>Activity Color Indicator</h3>
+      <canvas id="colorSphere"></canvas>
+      <p>Red: High Stress | Yellow: Neutral | Green: Calm</p>
+    </div>
+  </div>
+</body>
+</html>
